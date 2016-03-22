@@ -10,9 +10,9 @@ CND_CONF=default
 CND_DISTDIR=dist
 TMPDIR=build/${CND_CONF}/${IMAGE_TYPE}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/picTest.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-OUTPUT_BASENAME=picTest.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
-PACKAGE_TOP_DIR=pictest.x/
+OUTPUT_PATH=dist/${CND_CONF}/${IMAGE_TYPE}/TempHumMeterProject.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+OUTPUT_BASENAME=TempHumMeterProject.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
+PACKAGE_TOP_DIR=temphummeterproject/
 
 # Functions
 function checkReturnCode
@@ -57,15 +57,15 @@ mkdir -p ${TMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory ${TMPDIR}/pictest.x/bin
+makeDirectory ${TMPDIR}/temphummeterproject/bin
 copyFileToTmpDir "${OUTPUT_PATH}" "${TMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/package/pictest.x.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/package/temphummeterproject.tar
 cd ${TMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/pictest.x.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/package/temphummeterproject.tar *
 checkReturnCode
 
 # Cleanup

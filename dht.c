@@ -33,21 +33,21 @@ void StartSignal() {
 }
 //////////////////////////////
 
-void CheckResponse() {
-    Check = 0;
-    __delay_us(50);
-
-    if (DHT == 0) {
-        __delay_us(80);
-
-
-        if (DHT == 1) {
-            Check = 1;
-            __delay_us(40);
-        }
-    }
-
-}
+//void CheckResponse() {
+//    Check = 0;
+//    __delay_us(50);
+//
+//    if (DHT == 0) {
+//        __delay_us(80);
+//
+//
+//        if (DHT == 1) {
+//            Check = 1;
+//            __delay_us(40);
+//        }
+//    }
+//
+//}
 //////////////////////////////
 
 char ReadData() {

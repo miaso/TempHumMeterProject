@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=picTest.X
+PROJECTNAME=TempHumMeterProject
 
 # Active Configuration
 DEFAULTCONF=default
