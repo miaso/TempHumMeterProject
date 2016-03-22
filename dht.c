@@ -59,7 +59,7 @@ char ReadData() {
             i &= ~(1 << (7 - j)); //Clear bit (7-b)
         else {
             i |= (1 << (7 - j)); //Set bit (7-b)
-            while (DHT);
+            while (!DHT);
         } //Wait until PORTD.F0 goes LOW
     }
     return i;
