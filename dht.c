@@ -55,7 +55,7 @@ char ReadData() {
     for (j = 0; j < 8; j++) {
         while (!DHT); //Wait until PORTD.F0 goes HIGH
         __delay_us(30);
-        if (DHT == 0)
+        if (DHT != 0)
             i &= ~(1 << (7 - j)); //Clear bit (7-b)
         else {
             i |= (1 << (7 - j)); //Set bit (7-b)
